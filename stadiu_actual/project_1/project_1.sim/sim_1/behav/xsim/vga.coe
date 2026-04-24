@@ -1,0 +1,9 @@
+memory_initialization_radix=16;
+memory_initialization_vector=
+; --- Litera A (16 randuri) ---
+0000, 0000, 0180, 03C0, 07E0, 0DB0, 1818, 1FF8, 
+1818, 1818, 1818, 1818, 1818, 0000, 0000, 0000,
+
+; --- Litera B (16 randuri) ---
+0000, 0000, 1FF0, 1818, 1818, 1818, 1FF0, 1818, 
+1818, 1818, 1818, 1818, 1FF0, 0000, 0000, 0000;

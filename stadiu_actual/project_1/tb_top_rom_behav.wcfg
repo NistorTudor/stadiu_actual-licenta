@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_rom_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top_rom" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="10.860000001 ms"></ZoomEndTime>
+      <Cursor1Time time="0.135781700 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_top_rom/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/hsync" type="logic">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/vsync" type="logic">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/vgaRed" type="array">
+      <obj_property name="ElementShortName">vgaRed[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vgaRed[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/vgaGreen" type="array">
+      <obj_property name="ElementShortName">vgaGreen[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vgaGreen[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/vgaBlue" type="array">
+      <obj_property name="ElementShortName">vgaBlue[3:0]</obj_property>
+      <obj_property name="ObjectShortName">vgaBlue[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/clk_148MHz" type="logic">
+      <obj_property name="ElementShortName">clk_148MHz</obj_property>
+      <obj_property name="ObjectShortName">clk_148MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/w_pixel_x" type="array">
+      <obj_property name="ElementShortName">w_pixel_x[11:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pixel_x[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/w_pixel_y" type="array">
+      <obj_property name="ElementShortName">w_pixel_y[11:0]</obj_property>
+      <obj_property name="ObjectShortName">w_pixel_y[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/w_video_on" type="logic">
+      <obj_property name="ElementShortName">w_video_on</obj_property>
+      <obj_property name="ObjectShortName">w_video_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/w_text_on" type="logic">
+      <obj_property name="ElementShortName">w_text_on</obj_property>
+      <obj_property name="ObjectShortName">w_text_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top_rom/dut/w_char_code" type="array">
+      <obj_property name="ElementShortName">w_char_code[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_char_code[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

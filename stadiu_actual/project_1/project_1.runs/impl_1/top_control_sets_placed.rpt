@@ -1,0 +1,87 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Fri Apr 24 08:12:33 2026
+| Host         : DESKTOP-D8VOBQQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |     9 |
+|    Minimum number of control sets                        |     9 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    38 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |     9 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              66 |           27 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              31 |            8 |
+| Yes          | No                    | No                     |              38 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              11 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------------+-----------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |          Enable Signal         |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+--------------------------------+-----------------------------------+------------------+----------------+--------------+
+|  clock_gen_inst/inst/clk_out1 | vga_ctrl_inst/v_count          |                                   |                1 |              1 |         1.00 |
+|  clock_gen_inst/inst/clk_out1 | fsm_inst/write_ptr[4]_i_1_n_0  |                                   |                1 |              5 |         5.00 |
+|  clock_gen_inst/inst/clk_out1 | ram_inst/E[0]                  |                                   |                3 |              8 |         2.67 |
+|  clock_gen_inst/inst/clk_out1 |                                | vga_ctrl_inst/h_count[11]_i_1_n_0 |                3 |             11 |         3.67 |
+|  clock_gen_inst/inst/clk_out1 | vga_ctrl_inst/v_count          | vga_ctrl_inst/v_count[11]_i_1_n_0 |                6 |             11 |         1.83 |
+|  clock_gen_inst/inst/clk_out1 | btn_ctrl_inst/obj_h[0]_i_1_n_0 |                                   |                3 |             12 |         4.00 |
+|  clock_gen_inst/inst/clk_out1 | btn_ctrl_inst/obj_v[0]_i_1_n_0 |                                   |                7 |             12 |         1.71 |
+|  clock_gen_inst/inst/clk_out1 |                                | btn_ctrl_inst/move_tick           |                5 |             20 |         4.00 |
+|  clock_gen_inst/inst/clk_out1 |                                |                                   |               27 |             66 |         2.44 |
++-------------------------------+--------------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

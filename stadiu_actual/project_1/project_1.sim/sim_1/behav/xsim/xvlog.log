@@ -1,0 +1,20 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/font_rom_ip/sim/font_rom_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/.vga_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/vga_font_text.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_font_text
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/vga_text_ram.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_text_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/video_mixer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module video_mixer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tudor/Desktop/test_rom/project_1/tb_top_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top_rom

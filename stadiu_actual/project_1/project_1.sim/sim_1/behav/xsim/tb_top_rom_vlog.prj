@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "D:/2025.1/Vivado/data/rsb/busdef" --include "../../../../project_1.ip_user_files/ipstatic" \
+"../../../../project_1.gen/sources_1/ip/font_rom_ip/sim/font_rom_ip.v" \
+"../../../../project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+"../../../../project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" \
+"../../../../.vga_controller.v" \
+"../../../../top.v" \
+"../../../../vga_font_text.v" \
+"../../../../vga_text_ram.v" \
+"../../../../video_mixer.v" \
+"../../../../tb_top_rom.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

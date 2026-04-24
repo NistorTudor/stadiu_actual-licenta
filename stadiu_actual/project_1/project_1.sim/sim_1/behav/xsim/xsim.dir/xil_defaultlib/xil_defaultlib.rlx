@@ -1,0 +1,15 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/Users/Tudor/Desktop/test_rom/project_1/.vga_controller.v,1776450813,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/top.v,,vga_controller,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1776458531,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v,,blk_mem_gen_0,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,1776451838,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/.vga_controller.v,,clk_wiz_0,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v,1776451838,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v,,clk_wiz_0_clk_wiz,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/font_rom_ip/sim/font_rom_ip.v,1776452694,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/project_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,font_rom_ip,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/tb_top_rom.v,1776454110,verilog,,,,tb_top_rom,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/top.v,1776457505,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/vga_font_text.v,,top,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/vga_font_text.v,1776457466,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/vga_text_ram.v,,vga_font_text,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/vga_text_ram.v,1776459382,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/video_mixer.v,,vga_text_ram,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/Users/Tudor/Desktop/test_rom/project_1/video_mixer.v,1776451164,verilog,,C:/Users/Tudor/Desktop/test_rom/project_1/tb_top_rom.v,,video_mixer,,,../../../../project_1.ip_user_files/ipstatic;D:/2025.1/Vivado/data/rsb/busdef,,,,,
