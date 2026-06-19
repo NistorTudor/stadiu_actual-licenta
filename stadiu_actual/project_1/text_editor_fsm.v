@@ -4,7 +4,7 @@ module text_editor_fsm(
     input              clk,           // Ceasul sistemului (148MHz)
     input              btnC,          // Butonul fizic de pe placă
     input      [7:0]   current_char,  // Litera selectată din Mixer/Switch-uri
-    output reg [4:0]   write_ptr = 0, // Adresa unde scriem în RAM (0-29)
+    output reg [4:0]   write_ptr = 0, // Pointer de adresă pentru indexarea spațiului RAM.
     output reg [7:0]   typed_char,    // Litera trimisă efectiv spre RAM
     output reg         we             // 1 = Scrie acum! / 0 = Nu scrie
 );
