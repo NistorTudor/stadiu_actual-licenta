@@ -1,37 +1,39 @@
 `timescale 1ns / 1ps
 
 module vga_controller (
-    input           clk_148MHz, // Ceas sistem 148MHz
-    input           reset,      // Semnal resetare
-    output reg      hsync,      // Sync orizontal monitor
-    output reg      vsync,      // Sync vertical monitor
-    output [11:0]   pixel_x,    // Coloana pixel monitor
-    output [11:0]   pixel_y,    // Rand pixel monitor
-    output          video_on    // Activare culoare imagine
+    input           clk_148MHz, // Semnal de ceas sistem 148.5 MHz
+    input           reset,      // Reset asincron global
+    output reg      hsync,      // Semnal de sincronizare orizontală
+    output reg      vsync,      // Semnal de sincronizare verticală
+    output [11:0]   pixel_x,    // Coordonată orizontală curentă scanare
+    output [11:0]   pixel_y,    // Coordonată verticală curentă scanare
+    output          video_on    // Validare zonă activă de afișare Blanking control
 );
-    parameter HD   = 1920;      // Latime vizibila ecran
-    parameter HF   = 88;        // Timp asteptare fata X
-    parameter HR   = 44;        // Impuls sync orizontal
-    parameter HB   = 148;       // Timp asteptare spate X
-    parameter HMAX = 2200;      // Total pixeli pe linie
+    // Parametri temporali orizontali Sincronizare linie
+    parameter HD   = 1920;      // Rezoluție orizontală activă
+    parameter HF   = 88;        // Front Porch orizontal
+    parameter HR   = 44;        // Lățime impuls de sincronizare orizontală
+    parameter HB   = 148;       // Back Porch orizontal
+    parameter HMAX = 2200;      // Perioadă totală a unei linii de scanare
 
-    parameter VD   = 1080;      // Inaltime vizibila ecran
-    parameter VF   = 4;         // Timp asteptare fata Y
-    parameter VR   = 5;         // Impuls sync vertical
-    parameter VB   = 36;        // Timp asteptare spate Y
-    parameter VMAX = 1125;      // Total linii pe cadru
+    // Parametri temporali verticali Sincronizare cadru
+    parameter VD   = 1080;      // Rezoluție verticală activă linii vizibile
+    parameter VF   = 4;         // Front Porch vertical
+    parameter VR   = 5;         // Lățime impuls de sincronizare verticală
+    parameter VB   = 36;        // Back Porch vertical
+    parameter VMAX = 1125;      // Perioadă totală a unui cadru video
 
-    reg [11:0] h_count = 0;     // Contor pixeli orizontali
-    reg [11:0] v_count = 0;     // Contor linii verticale
+    reg [11:0] h_count = 0;     // Contor de baleiaj orizontal
+    reg [11:0] v_count = 0;     // Contor de baleiaj vertical
 
-    // Numarator pixeli orizontala
+    // Logica de baleiaj orizontal Incrementare per pixel
     always @(posedge clk_148MHz or posedge reset) begin
         if (reset) h_count <= 0;
         else if (h_count == HMAX - 1) h_count <= 0;
         else h_count <= h_count + 1;
     end
 
-    // Numarator linii verticala
+    // Logica de baleiaj vertical Incrementare per linie completată
     always @(posedge clk_148MHz or posedge reset) begin
         if (reset) v_count <= 0;
         else if (h_count == HMAX - 1) begin
@@ -40,14 +42,15 @@ module vga_controller (
         end
     end
 
-    // Sincronizare monitor
+    // Generarea semnalelor de sincronizare Sync Pulses
     always @(posedge clk_148MHz) begin
         hsync <= (h_count >= (HD + HF) && h_count < (HD + HF + HR));
         vsync <= (v_count >= (VD + VF) && v_count < (VD + VF + VR));
     end
 
-    assign video_on = (h_count < HD) && (v_count < VD);     // Semnal imagine activa
-    assign pixel_x  =                          h_count;     // Contor X legat direct la iesire
-    assign pixel_y  =                          v_count;     // Contor Y legat direct la iesire
+    // Validarea zonei vizibile Active Video Region
+    assign video_on = (h_count < HD) && (v_count < VD);     // Semnal activ doar în interiorul rezoluției 1080p
+    assign pixel_x  =                          h_count;     // Mapare directă a coordonatei X la ieșire
+    assign pixel_y  =                          v_count;     // Mapare directă a coordonatei Y la ieșire
 
 endmodule
